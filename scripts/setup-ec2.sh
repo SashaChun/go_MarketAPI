@@ -21,8 +21,8 @@ sudo yum install -y git
 
 echo "🔑 Setting up project directory..."
 cd ~
-git clone https://github.com/YOUR_USERNAME/untitled9.git
-cd untitled9
+git clone https://github.com/SashaChun/go_MarketAPI.git
+cd go_MarketAPI
 
 echo "📝 Creating .env file..."
 cat > .env << 'ENVFILE'

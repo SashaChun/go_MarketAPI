@@ -4,7 +4,7 @@ set -e
 
 echo "🚀 Starting deployment..."
 
-cd ~/untitled9
+cd ~/go_MarketAPI
 
 echo "📥 Pulling latest changes..."
 git pull origin main
