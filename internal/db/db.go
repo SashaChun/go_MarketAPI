@@ -10,11 +10,9 @@ import (
 var DB *gorm.DB
 
 func InitDB() *gorm.DB {
-	fmt.Println(config.Port, config.Host, config.DatabaseURL, config.User, config.Password)
-
 	dsn := fmt.Sprintf(
 		"host=%s port=%s user=%s password=%s dbname=%s sslmode=disable",
-		config.Host, config.Port, config.User, config.Password, config.DatabaseURL,
+		config.GetDBHost(), config.GetDBPort(), config.GetDBUser(), config.GetDBPassword(), config.GetDBName(),
 	)
 
 	fmt.Println("DSN:", dsn)

@@ -2,12 +2,30 @@ package config
 
 import "os"
 
-var Port = os.Getenv("PORT")
+func GetAppPort() string {
+	return os.Getenv("APP_PORT")
+}
 
-var Host = os.Getenv("HOST")
+func GetDBPort() string {
+	return os.Getenv("DB_PORT")
+}
 
-var DatabaseURL = os.Getenv("DATABASE_URL")
+func GetDBHost() string {
+	return os.Getenv("DB_HOST")
+}
 
-var User = os.Getenv("DB_USER")
+func GetDBName() string {
+	return os.Getenv("DB_NAME")
+}
 
-var Password = os.Getenv("PASSWORD")
+func GetDBUser() string {
+	return os.Getenv("DB_USER")
+}
+
+func GetDBPassword() string {
+	return os.Getenv("DB_PASSWORD")
+}
+
+func GetJWTSecret() string {
+	return os.Getenv("JWT_SECRET")
+}
